@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asahi Design Centre - Product list and showroom selection.">
+  <title>Asahi Design Centre | Products</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-wrap">
+      <a href="index.html#home" class="brand">
+        <img src="images/logo.png" alt="Asahi Design Centre logo" class="brand-logo">
+        <div class="brand-text">
+          <strong>Asahi Design Centre</strong>
+          <span>Luxury Furniture and Interiors</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="mainNav">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="index.html#custom" class="nav-link">Custom Furniture</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-wrap" for="siteSearch">
+          <i class="fas fa-search"></i>
+          <input id="siteSearch" type="search" placeholder="Search products" list="searchSuggestions" autocomplete="off">
+        </label>
+        <datalist id="searchSuggestions"></datalist>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Choose language">🌐</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+        <a class="btn btn-consult" href="index.html#contact">Book Consultation</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="products" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-scroll">
+          <p class="eyebrow">Our Products</p>
+          <h2>Showroom Selection</h2>
+        </div>
+
+        <div class="filter-row reveal-scroll" id="productFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="living">Living Room</button>
+          <button class="filter-btn" data-filter="dining">Dining</button>
+          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+          <button class="filter-btn" data-filter="office">Office</button>
+          <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <article class="product-card reveal-scroll" data-category="bedroom" data-name="Solace Bed Frame">
+            <img src="images/queenbedframe.png" alt="Solace Bed Frame">
+            <div class="product-body">
+              <h3>Solace Bed Frame</h3>
+              <p>Upholstered panel headboard with hardwood frame and soft-close storage base.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="solace-bed-frame"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Solace Bed Frame"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="living" data-name="Linea Modular Sofa">
+            <img src="images/modersofa.png" alt="Linea Modular Sofa">
+            <div class="product-body">
+              <h3>Linea Modular Sofa</h3>
+              <p>Configurable deep-seat sofa with washable premium fabric and tailored profile.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="linea-modular-sofa"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Linea Modular Sofa"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="dining" data-name="Atria Dining Set">
+            <img src="images/6seater.png" alt="Atria Dining Set">
+            <div class="product-body">
+              <h3>Atria Dining Set</h3>
+              <p>Six-seater table set with natural veneer top and hand-finished metal base.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="atria-dining-set"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Atria Dining Set"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="office" data-name="Axis Executive Desk">
+            <img src="images/executive.png" alt="Axis Executive Desk">
+            <div class="product-body">
+              <h3>Axis Executive Desk</h3>
+              <p>Clean executive desk with integrated cable management and modular side return.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="axis-executive-desk"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Axis Executive Desk"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="outdoor" data-name="Terra Lounge Bench">
+            <img src="images/accent.png" alt="Terra Lounge Bench">
+            <div class="product-body">
+              <h3>Terra Lounge Bench</h3>
+              <p>Weather-ready lounge piece with marine-grade fabric and teak-inspired frame.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="terra-lounge-bench"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Terra Lounge Bench"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="bedroom" data-name="Halo Walk-In Wardrobe">
+            <img src="images/wardrobe.png" alt="Halo Walk-In Wardrobe">
+            <div class="product-body">
+              <h3>Halo Walk-In Wardrobe</h3>
+              <p>Custom wardrobe system with soft-close drawers, glass doors, and smart partitioning.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="halo-walk-in-wardrobe"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Halo Walk-In Wardrobe"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="living" data-name="Aria Accent Lounge Chair">
+            <img src="images/asahi1.jpg" alt="Aria Accent Lounge Chair">
+            <div class="product-body">
+              <h3>Aria Accent Lounge Chair</h3>
+              <p>Statement lounge chair with curved silhouette and tailored premium upholstery.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="aria-accent-lounge-chair"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Aria Accent Lounge Chair"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="dining" data-name="Nobu Round Dining Table">
+            <img src="images/asahi2.jpg" alt="Nobu Round Dining Table">
+            <div class="product-body">
+              <h3>Nobu Round Dining Table</h3>
+              <p>Round dining table designed for compact luxury condos and hospitality dining zones.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="nobu-round-dining-table"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Nobu Round Dining Table"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="bedroom" data-name="Luna Floating Nightstand">
+            <img src="images/asahi3.jpg" alt="Luna Floating Nightstand">
+            <div class="product-body">
+              <h3>Luna Floating Nightstand</h3>
+              <p>Minimal floating bedside table with hidden drawer and soft-close mechanism.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="luna-floating-nightstand"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Luna Floating Nightstand"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="office" data-name="Vertex Meeting Table">
+            <img src="images/asahi7.jpg" alt="Vertex Meeting Table">
+            <div class="product-body">
+              <h3>Vertex Meeting Table</h3>
+              <p>Boardroom table with integrated cable ports and refined executive finish.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="vertex-meeting-table"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Vertex Meeting Table"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="outdoor" data-name="Cove Patio Sofa Set">
+            <img src="images/asahi8.jpg" alt="Cove Patio Sofa Set">
+            <div class="product-body">
+              <h3>Cove Patio Sofa Set</h3>
+              <p>Weather-resistant outdoor sofa set crafted for terraces and poolside lounges.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="cove-patio-sofa-set"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Cove Patio Sofa Set"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-scroll" data-category="living" data-name="Sora TV Console Unit">
+            <img src="images/asahi6.jpg" alt="Sora TV Console Unit">
+            <div class="product-body">
+              <h3>Sora TV Console Unit</h3>
+              <p>Low-profile media console with mixed material shelves and concealed storage.</p>
+              <div class="product-actions">
+                <a href="#" class="btn btn-light btn-view-details" data-slug="sora-tv-console-unit"><i class="far fa-eye"></i> View Details</a>
+                <a href="index.html#contact" class="btn btn-primary btn-inquire" data-product="Sora TV Console Unit"><i class="far fa-envelope"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Asahi Design Centre</h3>
+        <p>Premium furniture showroom and consultation-based interior partner.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#custom">Custom Furniture</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>Natividad Building, Tomas Pinpin St</p>
+        <p>Binondo, Manila, 1008 Metro Manila</p>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="detail-modal" id="productDetailModal" aria-hidden="true">
+    <div class="detail-panel">
+      <button class="detail-close" id="detailClose" aria-label="Close details">&times;</button>
+      <div class="detail-layout">
+        <div class="detail-content">
+          <p class="eyebrow">Furniture Details</p>
+          <h3 id="detailName">Product Name</h3>
+          <ul class="detail-list">
+            <li><strong>Type:</strong> <span id="detailType">-</span></li>
+            <li><strong>Size / Dimensions:</strong> <span id="detailSize">-</span></li>
+            <li><strong>Materials:</strong> <span id="detailMaterials">-</span></li>
+            <li><strong>Available Colors:</strong> <span id="detailColors">-</span></li>
+            <li><strong>Customization:</strong> <span id="detailCustom">-</span></li>
+          </ul>
+          <a href="index.html#contact" class="btn btn-primary" id="detailInquireBtn">Inquire This Product</a>
+        </div>
+        <div class="detail-visual">
+          <img id="detailImage" src="images/queenbedframe.png" alt="Furniture preview">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/ui-loading.js"></script>
+  <script src="js/language-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

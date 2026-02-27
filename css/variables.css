@@ -1,0 +1,116 @@
+
+:root {
+  /* ===== MGA KULAY ===== */
+  /* Pangunahin */
+  --color-primary: #e10600;
+  --color-primary-dark: #b10500;
+  --color-primary-light: #ff1a0f;
+  
+  /* Neutral */
+  --color-bg: #f5f1ea;
+  --color-dark: #121212;
+  --color-text: #2b2b2b;
+  --color-text-muted: #6a6a6a;
+  --color-paper: #ffffff;
+  --color-accent-soft: #f7d6d2;
+  --color-border: #e0e0e0;
+  
+  /* Semantikong kulay */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  
+  /* ===== TIPOGRAPIYA ===== */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Manrope", sans-serif;
+  
+  /* Laki ng font */
+  --text-xs: 0.75rem;    /* 12 piksel */
+  --text-sm: 0.875rem;   /* 14 piksel */
+  --text-base: 1rem;     /* 16 piksel */
+  --text-lg: 1.125rem;   /* 18 piksel */
+  --text-xl: 1.25rem;    /* 20 piksel */
+  --text-2xl: 1.5rem;    /* 24 piksel */
+  --text-3xl: 1.875rem;  /* 30 piksel */
+  --text-4xl: 2.25rem;   /* 36 piksel */
+  --text-5xl: 3rem;      /* 48 piksel */
+  --text-6xl: 3.75rem;   /* 60 piksel */
+  
+  /* Bigat ng font */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Taas ng linya */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  
+  /* ===== AGWAT ===== */
+  --space-xs: 0.5rem;    /* 8 piksel */
+  --space-sm: 1rem;      /* 16 piksel */
+  --space-md: 1.5rem;    /* 24 piksel */
+  --space-lg: 2rem;      /* 32 piksel */
+  --space-xl: 3rem;      /* 48 piksel */
+  --space-2xl: 4rem;     /* 64 piksel */
+  --space-3xl: 6rem;     /* 96 piksel */
+  
+  /* ===== AYOS ===== */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* ===== MGA BORDER ===== */
+  --radius-sm: 0.375rem;  /* 6 piksel */
+  --radius-md: 0.5rem;    /* 8 piksel */
+  --radius-lg: 1rem;      /* 16 piksel */
+  --radius-xl: 1.5rem;    /* 24 piksel */
+  --radius-full: 9999px;
+  
+  /* ===== MGA ANINO ===== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* ===== MGA TRANSISYON ===== */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  
+  /* Pagpapakinis ng galaw */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ===== Z-INDEX ===== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  /* ===== GLASSMORPHISM ===== */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-blur: blur(20px);
+  --glass-saturate: saturate(180%);
+}
+
+/* ===== DARK MODE (Opsyonal) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a1a;
+    --color-paper: #2a2a2a;
+    --color-text: #e0e0e0;
+    --color-text-muted: #a0a0a0;
+    --color-border: #404040;
+  }
+}
+

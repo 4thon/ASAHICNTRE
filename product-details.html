@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Asahi Design Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-wrap">
+      <a href="index.html#home" class="brand">
+        <img src="images/logo.png" alt="Asahi Design Centre logo" class="brand-logo">
+        <div class="brand-text">
+          <strong>Asahi Design Centre</strong>
+          <span>Luxury Furniture and Interiors</span>
+        </div>
+      </a>
+      <nav class="site-nav" id="mainNav">
+        <a href="index.html#collections" class="nav-link">Collections</a>
+        <a href="index.html#custom" class="nav-link">Custom Furniture</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Choose language">🌐</button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+      <a class="btn btn-consult" href="index.html#contact">Book Consultation</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container product-detail-layout">
+      <div class="product-gallery">
+        <img id="mainProductImage" src="images/queenbedframe.png" alt="Product image">
+        <div class="thumb-row" id="thumbRow"></div>
+      </div>
+
+      <div class="product-detail-card">
+        <p class="eyebrow">Product Details</p>
+        <h1 id="productName">Solace Bed Frame</h1>
+        <p id="productDescription">Premium made-to-order furniture designed for modern living.</p>
+
+        <ul class="detail-list">
+          <li><strong>Materials Used:</strong> <span id="productMaterials">Kiln-dried hardwood and premium upholstery.</span></li>
+          <li><strong>Dimensions:</strong> <span id="productDimensions">Available in standard and custom sizes.</span></li>
+          <li><strong>Available Colors:</strong> <span id="productColors">Multiple colorways available.</span></li>
+          <li><strong>Customization Options:</strong> <span id="productCustom">Size, finish, fabric, and layout customization.</span></li>
+        </ul>
+
+        <div class="product-actions">
+          <a class="btn btn-primary" href="index.html#contact">Inquiry</a>
+          <a class="btn btn-light" href="index.html#products">Back to Products</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/ui-loading.js"></script>
+  <script src="js/language-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
